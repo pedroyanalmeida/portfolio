@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Meu Currículo</title>
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: 60vh; /* Defina a altura fixa desejada */
+            object-fit: cover; /* Opcional: para garantir que a imagem cubra todo o espaço sem distorcer */
+        }
+    </style>
+</head>
+<body>
+    <div class="user">
+        <img class="foto" src="assets/images/perfil.jpeg" alt="Meu Perfil">
+        <h1 class="name">Pedro Yan</h1>
+    </div>
+    <div class="container p-5">
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <h2>Informações Pessoais</h2>
+                <br>
+                <ul>
+                    <li>Nome Completo: Pedro Yan de Meneses Almeida</li>
+                    <li>Idade: 18 anos</li>
+                    <li>Habilitação: Nenhuma</li>
+                    <li>Endereço: Fazenda Casa de Pedra - Pentecoste - CE</li>
+                    <li>Telefone: (85) 99164-5457</li>
+                    <li>E-mail: pedroalmeidatech@gmail.com</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h2>Sumário</h2>
+                <br>
+                <p>Sou um Técnico de Informática, além de Desenvolvedor Web, com o básico de experiência em
+                    desenvolver projetos de software</p>
+            </div>
+            <div class="col-4">
+                <h2>Formação Acadêmica</h2>
+                <br>
+                <p>Ensino Médio Completo - Técnico de Informática - EEEP Walter Ramos de Araújo (2021-2023)</p>
+            </div>
+        </div>
+        <br>
+        <div class="row-info">
+            <div class="col-info a">
+                <h2>Experiência de Trabalho</h2>
+                <br>
+                <ul>
+                    <li><b>Desenvolvedor Web FullStack (Estágio) - Secretaria de Saúde de São Gonçalo do Amarante - CE</b>
+                    </li>
+                    <p>Agosto de 2023 - Dezembro de 2023</p>
+                    <p>Auxiliei no desenvolvimento de projetos de software aos funcionários da administração do local
+                        que estagiei, desta forma facilitando e tornando-o mais eficaz no gerenciamento de recursos
+                        humanos e processos habituais desse órgão</p>
+                </ul>
+            </div>
+            <div class="col-info">
+                <h2>Proficiências</h2>
+                <ul style="list-style: initial;">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>JavaScript</li>
+                    <li>MySQL</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+            <div class="col-info">
+                <h2>Cursos de Extensão</h2>
+                <br>
+                <ul>
+                    <li>Suporte Técnico em Tecnologia da Informação – 100h/a (DELL/IDESCO)</li>
+                    <li>Curso de Inglês – 80h/a (Planet Smart City)</li>
+                </ul>
+            </div>
+        </div>
+        <h2>Projetos</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/images/pv.png" alt="Primeiro slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        <a id="githubLink" class="btn btn-light" style="border: 1px solid gray; margin-top: 1%;" href="" target="_blank">
+            <img src="assets/images/git.svg" alt="Github" style="width: 30%;"> Visualizar
+        </a>
+    </div>
+</body>
+<div class="footer">
+    <footer>
+        <div class="contatos">
+            <div class="column"><a class="btn btn-success" href="https://api.whatsapp.com/send?phone=85991645457"><img src="assets/images/whatsapp.svg" alt="Whatsapp"> Whatsapp</a></div>
+            <div class="column"><a class="btn btn-primary instagram" href="https://www.instagram.com/pyandc/"><img src="assets/images/instagram.svg" alt="Instagram"> Instagram</a></div>
+            <div class="column"><a class="btn btn-primary" href="https://www.linkedin.com/in/pedro-almeida-ab1340278/"><img src="assets/images/linkedin.svg" alt="Linkedin"> Linkedin</a></div>
+        </div>
+        <p>&copy; Pedro Yan. Todos os direitos reservados.</p>
+    </footer>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#carouselExampleIndicators').carousel();
+        updateGitHubLink();
+        $('#carouselExampleIndicators').on('slid.bs.carousel', function () {
+            updateGitHubLink();
+        });
+    });
+
+    function updateGitHubLink() {
+        var slideIndex = $('#carouselExampleIndicators .carousel-inner .carousel-item.active').index();
+        var githubLinks = [
+            'https://github.com/pedroyanalmeida/Sistema_Agendar_Consulta'
+        ];
+        document.getElementById('githubLink').href = githubLinks[slideIndex];
+    }
+</script>
+</html>
